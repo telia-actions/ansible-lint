@@ -1,0 +1,14 @@
+name: Ansible Lint
+description: Run Ansible Lint
+inputs:
+  path:
+    required: false
+    default: "."
+runs:
+  using: docker
+  image: 'Dockerfile'
+  env:
+    GITHUB_ACTIONS: "true"
+    GITHUB_WORKFLOW: "{{ github.workflow.name }}"
+  args:
+    - ${{ inputs.path }}

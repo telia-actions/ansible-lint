@@ -1,0 +1,5 @@
+parseable: true
+verbosity: 1
+skip_list:
+  - 'fqcn-builtins'
+quiet: true
