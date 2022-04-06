@@ -1,29 +1,5 @@
----
-exclude_paths:
-  - .cache/
-  - .github/
 parseable: true
-quiet: true
 verbosity: 1
-loop_var_prefix: "{role}_"
-use_default_rules: true
 skip_list:
-  - skip_this_tag
-  - git-latest
-enable_list:
-  - empty-string-compare
-  - no-log-password
-  - no-same-owner
-  - yaml
-warn_list:
-  - skip_this_tag
-  - git-latest
-  - experimental
-offline: false
-extra_vars:
-  multiline_string_variable: |
-    line1
-    line2
-  complex_variable: ":{;\t$()"
-kinds:
-  - yaml: "**/*.yaml-too"
+  - 'fqcn-builtins'
+quiet: true
